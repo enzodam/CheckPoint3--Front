@@ -1,0 +1,145 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: grey;
+    color: white;
+}
+
+.cabecalho {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.cabecalho nav a {
+    color: white;
+    font-size: 1rem;
+    margin-left: 4rem;
+}
+
+.cabecalho nav a:hover {
+    color: blue;
+}
+
+main {
+    background-color: rgb(68, 67, 67);
+    padding: 2rem;
+    margin: 2rem auto;
+    border: solid 2px #ccc;
+    border-radius: 20px;
+    max-width: 900px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 1rem;
+}
+
+form input, form select {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 2rem;
+    background-color: #ff0055;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff3366;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: black;
+    color: white;
+}
+
+.success-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.success-message {
+    text-align: center;
+}
+
+.icon-success {
+    font-size: 3rem;
+    color: green;
+}
+
+pre {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: left;
+    max-width: 90%;
+    overflow-x: auto;
+}
+
+@media only screen and (max-width: 991px) {
+    .cabecalho nav {
+        display: none;
+    }
+
+    .logo {
+        max-width: 100%;
+        height: auto;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    footer p {
+        display: none;
+    }
+
+    .footer-images {
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        margin-top: 1rem;
+    }
+
+    .footer-images a {
+        margin: 0 5px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .footer-images {
+        display: none;
+    }
+
+    footer p {
+        display: block;
+    }
+}
